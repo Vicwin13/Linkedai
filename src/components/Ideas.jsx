@@ -3,13 +3,16 @@ import idea from "../Images/the big idea 1.png";
 export default function Ideas() {
   return (
     <>
-      <div>
-        <div>
-          <img src={idea} alt="" />
+      <div className="flex flex-wrap border-white border-opacity-5 border-t-2 border-b-2 py-8 justify-center lg:justify-between items-center">
+        <div className="lg:pl-32">
+          <img className="md:w-[30rem] md:h-[29rem]" src={idea} alt="" />
         </div>
-        <div>
-          <p>Introduction to getlinked tech Hackathon 1.0</p>
-          <p>
+        <div className="lg:pr-32 w-[33rem] ">
+          <p className="font-clash mt-16 mx-auto pb-8 w-[27rem] text-center lg:text-left text-[2rem] font-[700] leading-none">
+            Introduction to getlinked
+            <span className="text-third"> tech Hackathon 1.0</span>
+          </p>
+          <p className="text-center lg:text-left  text-[0.9rem] font-montserrat leading-6">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
             genius, a design maverick, or a concept wizard, you'll have the

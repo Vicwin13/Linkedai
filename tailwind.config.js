@@ -6,9 +6,17 @@ export default {
       first: "#150E28",
       second: "#903AFF",
       third: "#D434FE",
-      gradient: ["#903AFF", "#FE34B9"],
+      white: "#FFFFFF",
+      black: "#000000",
+      gradient: ["#903AFF", " #D434FE", "#FF26B9", "#FE34B9"],
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        clash: ["Clash Display", "sans"],
+        montserrat: ["Montserrat", "sans"],
+        unica : ["Unica One", "cursive"]
+      },
+    },
   },
   plugins: [],
 };
