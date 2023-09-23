@@ -13,6 +13,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <link
       href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
       rel="stylesheet"></link>
+    <link
+      href="https://www.dafontfree.net/embed/bWFkZS10b21teS1vdXRsaW5lLXJlZ3VsYXImZGF0YS85NjUvbS8yMzM3NTAvTUFERSBUT01NWSBUaGluIE91dGxpbmVfUEVSU09OQUwgVVNFLm90Zg"
+      rel="stylesheet"
+      type="text/css"
+    />
     <App />
   </React.StrictMode>
 );

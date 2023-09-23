@@ -8,13 +8,15 @@ export default {
       third: "#D434FE",
       white: "#FFFFFF",
       black: "#000000",
+      out: "A866FD",
       gradient: ["#903AFF", " #D434FE", "#FF26B9", "#FE34B9"],
     },
     extend: {
       fontFamily: {
         clash: ["Clash Display", "sans"],
         montserrat: ["Montserrat", "sans"],
-        unica : ["Unica One", "cursive"]
+        unica: ["Unica One", "cursive"],
+        made: ["made-tommy-outline-regular", "sans-serif"],
       },
     },
   },

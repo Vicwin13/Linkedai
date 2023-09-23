@@ -2,12 +2,12 @@ import woman from "../Images/7450159 1.png";
 
 export default function Guidelines() {
   return (
-    <div className="flex   justify-center flex-col-reverse lg:flex-row items-center">
-      <div className="w-[33.4rem]">
-        <p className="font-clash font-bold text-[2rem] w-80 leading-none pb-12">
+    <div className="flex border justify-center lg:justify-between flex-col-reverse lg:flex-row items-center">
+      <div className="lg:pl-32 w-[33.4rem]">
+        <p className="font-clash font-bold mx-auto text-center lg:text-left lg:ml-0 text-[2rem] w-80 leading-none pb-12">
           Rules and <span className="text-third">Guidelines</span>
         </p>
-        <p className="">
+        <p className="text-sm leading-7  lg:text-left text-center font-montserrat">
           Our tech hackathon is a melting pot of visionaries, and its purpose is
           as clear as day: to shape the future. Whether you're a coding genius,
           a design maverick, or a concept wizard, you'll have the chance to
@@ -17,7 +17,7 @@ export default function Guidelines() {
         </p>
       </div>
       <div>
-        <img className="w-[41rem] h-[41rem]" src={woman} alt="" />
+        <img className="w-[24rem] lg:w-[41rem] lg:h-[41rem]" src={woman} alt="" />
       </div>
     </div>
   );
