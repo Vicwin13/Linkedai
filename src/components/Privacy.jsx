@@ -4,8 +4,8 @@ import padlock from "../Images/padlock.png";
 export default function Privacy() {
   return (
     <>
-      <section>
-        <aside>
+      <section className="flex justify-center py-20 items-center">
+        <aside className="w-[35rem]">
           <div>
             <h2>Privacy Policy and Terms</h2>
             <p>Last updated on September 12, 2023</p>
@@ -74,7 +74,12 @@ export default function Privacy() {
         </aside>
         <aside>
           <div>
-            <div style={{ backgroundImage: `url(${lock})` }}>
+            <div
+              className=""
+              style={{
+                backgroundImage: `url(${lock})`,
+                backgroundRepeat: "no-repeat",
+              }}>
               <img src={padlock} alt="" />
             </div>
           </div>
