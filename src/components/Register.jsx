@@ -23,11 +23,12 @@ export default function Register() {
           <form action="">
             <h1>CREATE YOUR ACCOUNT</h1>
             <div>
-              <div className="flex justify-center gap-6 lg:gap-8">
+              <div className="flex justify-center gap-6  lg:gap-8">
                 <div className="py-4">
                   <p className="pb-4">Team's Name</p>
                   <input
-                    className="p-[0.6rem] rounded border border-white w-[16rem] h-[2.5rem]"
+                    className="bg-bg3 p-[0.6rem] rounded border border-white w-[16rem] h-[2.5rem]"
+                    placeholder="Enter the name of your group"
                     type="text"
                   />
                 </div>
@@ -35,6 +36,7 @@ export default function Register() {
                   <p className="pb-4">Phone</p>
                   <input
                     className="p-[0.6rem] rounded border border-white w-[16rem] h-[2.5rem]"
+                    placeholder="Enter your phone number"
                     type="tel"
                   />
                 </div>
@@ -44,6 +46,7 @@ export default function Register() {
                   <p className="pb-4">Email</p>
                   <input
                     className="p-[0.6rem] rounded border border-white w-[16rem] h-[2.5rem]"
+                    placeholder="Enter your email address"
                     type="email"
                   />
                 </div>
@@ -51,12 +54,13 @@ export default function Register() {
                   <p className="pb-4">Project Topic</p>
                   <input
                     className="p-[0.6rem] rounded border border-white w-[16rem] h-[2.5rem]"
+                    placeholder="What is your group Project topic"
                     type="text"
                   />
                 </div>
               </div>
               <div className="flex justify-center py-4 lg:gap-8">
-                <div >
+                <div>
                   <p className="pb-4">Category</p>
                   <select
                     className="text-black w-[16rem] h-[2.5rem]"
@@ -80,7 +84,9 @@ export default function Register() {
                   </select>
                 </div>
               </div>
-              <p className="py-4 text-sm">Please review your registration details before submitting</p>
+              <p className="py-4 text-sm">
+                Please review your registration details before submitting
+              </p>
               <div className="flex gap-4">
                 <input type="checkbox" />
                 <p>
