@@ -11,6 +11,7 @@ export default {
       out: "A866FD",
       bg1: "rgba(212, 52, 254, 0.12)",
       bg2: "rgba(144, 58, 255, 0.12)",
+      bg3: "rgba(255, 255, 255, 0.03)",
       gradient: ["#903AFF", " #D434FE", "#FF26B9", "#FE34B9"],
     },
     extend: {

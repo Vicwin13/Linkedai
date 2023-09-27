@@ -1,7 +1,17 @@
+import NavbarLayout from "./NavbarLayout";
+
 export default function Contact() {
   return (
     <div>
-      <section>
+      <NavbarLayout>
+        <div className="pl-12 bg-opacity-0  bg-gradient-to-r from-gradient-1 to-gradient-0 ">
+          {/* <a href="#" className="text-white mix-blend-mode-screen">
+            Contact
+          </a> */}
+          <p className="mix-blend-multiply">contact</p>
+        </div>
+      </NavbarLayout>
+      {/* <section className="bg-third">
         <section className="text-gray-600 body-font relative">
           <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
             <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -92,7 +102,7 @@ export default function Contact() {
             </div>
           </div>
         </section>
-      </section>
+      </section> */}
     </div>
   );
 }
