@@ -1,108 +1,126 @@
 import NavbarLayout from "./NavbarLayout";
+import { Link } from "react-router-dom";
+import ig from "../Images/ig.svg";
+import x from "../Images/x.svg";
+import fb from "../Images/fb.svg";
+import ln from "../Images/ln.svg";
 
 export default function Contact() {
   return (
-    <div>
+    <>
       <NavbarLayout>
-        <div className="pl-12 bg-opacity-0  bg-gradient-to-r from-gradient-1 to-gradient-0 ">
-          {/* <a href="#" className="text-white mix-blend-mode-screen">
-            Contact
-          </a> */}
-          <p className="mix-blend-multiply">contact</p>
-        </div>
-      </NavbarLayout>
-      {/* <section className="bg-third">
-        <section className="text-gray-600 body-font relative">
-          <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-            <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-              <iframe
-                width="100%"
-                height="100%"
-                className="absolute inset-0"
-                frameborder="0"
-                title="map"
-                marginheight="0"
-                marginwidth="0"
-                scrolling="no"
-                src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
-                style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
-              <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-                <div className="lg:w-1/2 px-6">
-                  <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                    ADDRESS
-                  </h2>
-                  <p className="mt-1">
-                    Photo booth tattooed prism, portland taiyaki hoodie neutra
-                    typewriter
-                  </p>
-                </div>
-                <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                  <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                    EMAIL
-                  </h2>
-                  <a className="text-indigo-500 leading-relaxed">
-                    example@email.com
-                  </a>
-                  <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                    PHONE
-                  </h2>
-                  <p className="leading-relaxed">123-456-7890</p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-              <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-                Feedback
-              </h2>
-              <p className="leading-relaxed mb-5 text-gray-600">
-                Post-ironic portland shabby chic echo park, banjo fashion axe
-              </p>
-              <div className="relative mb-4">
-                <label
-                  htmlFor="name"
-                  className="leading-7 text-sm text-gray-600">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-              <div className="relative mb-4">
-                <label
-                  htmlFor="email"
-                  className="leading-7 text-sm text-gray-600">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-              <div className="relative mb-4">
-                <label
-                  htmlFor="message"
-                  className="leading-7 text-sm text-gray-600">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  data-gramm="false"
-                  wt-ignore-input="true"></textarea>
-              </div>
-              <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Button
-              </button>
+        <div className="absolute font-[400] text-[1rem] font-montserrat flex items-center pt-3 inset-y-0 right-8 lg:right-32">
+          <div>
+            <a className="pl-12" href="">
+              Timeline
+            </a>
+            <a className="pl-12" href="">
+              Overview
+            </a>
+            <a className="pl-12" href="">
+              FAQs
+            </a>
+
+            <Link
+              to="/contact"
+              className="pl-12 bg-clip-text text-transparent bg-gradient-to-r from-third to-second">
+              Contact
+            </Link>
+          </div>
+          <div className="pl-20  flex items-center gap-2 ">
+            <button className="md:block font-montserrat  font-[400] text-[1rem] rounded bg-gradient-to-tr from-gradient-2 via-gradient-3, via-gradient-1 to-gradient-0 w-[10.75rem] h-[3.3rem]">
+              <Link to="/register">Register</Link>
+            </button>
+            <div className=" w-full flex flex-col md:hidden">
+              <span className="bg-white mb-1 w-[2rem] h-1"></span>
+              <span className="bg-white  mb-1 w-[2rem] h-1"></span>
+              <span className="bg-white w-[2rem] h-1"></span>
             </div>
           </div>
+        </div>
+      </NavbarLayout>
+      <div className="bg-first min-h-screen flex  py-20 border items-center align-middle text-white">
+        <section className="flex justify-around gap-8 w-full ">
+          <div>
+            <h1 className="text-[2rem] font-bold text-third font-clash">
+              Get in touch
+            </h1>
+            <address className="font-montserrat">
+              <div className="py-4">
+                <p>Contact </p>
+                <p>Information</p>
+              </div>
+
+              <div className="py-4">
+                <p>27, Alara Street </p>
+                <p>Yaba 100012</p>
+                <p>Lagos State</p>
+              </div>
+
+              <p className="py-4">Call Us: 07090663212</p>
+
+              <div className="py-4">
+                <p>we ae open from Monday-Friday</p>
+                <p>08:00am - 05:00pm</p>
+              </div>
+            </address>
+            <div>
+              <h2 className="text-[1rem] text-third py-2">Share on</h2>
+              <div className="flex  gap-2">
+                <img className="w-fit" src={ig} alt="" />
+                <img src={x} alt="" />
+                <img className="w-fit" src={fb} alt="" />
+                <img src={ln} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* This is the form part */}
+          <aside className="p-14 bg-bg3 w-[35rem] drop-shadow-md">
+            <form action="">
+              <div className="text-third font-clash font-semibold py-6 text-[1.25rem]">
+                <p>Questions or need assistance?</p>
+                <p>Let us know about it!</p>
+              </div>
+              <div>
+                <div className="py-4">
+                  <input
+                    className="p-3 w-full drop-shadow-md bg-bg3 border border-opacity-30 rounded text-white"
+                    type="text"
+                    placeholder="First Name"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div className="pb-4">
+                  <input
+                    className=" p-3 w-full drop-shadow-md bg-bg3 border rounded text-white"
+                    type="email"
+                    placeholder="Mail"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div>
+                  <textarea
+                    className="p-3 w-full drop-shadow-md bg-bg3 border rounded text-white"
+                    name=""
+                    placeholder="Message"
+                    id=""
+                    cols="22"
+                    rows="10"></textarea>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                className="mt-8 w-full font-montserrat  font-[400] text-[1rem] rounded bg-gradient-to-tr from-gradient-2 via-gradient-3, via-gradient-1 to-gradient-0 h-[3.3rem]">
+                Submit
+              </button>
+            </form>
+          </aside>
         </section>
-      </section> */}
-    </div>
+      </div>
+    </>
   );
 }
