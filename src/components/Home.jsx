@@ -9,7 +9,7 @@ import Prizes from "./Prizes";
 import Sponsors from "./Sponsors";
 import Privacy from "./Privacy";
 import Footer from "./Footer";
-
+import Congrats from "./Congrats";
 export default function Home() {
   return (
     <div className="overflow-x-hidden bg-first text-white ">
@@ -24,6 +24,7 @@ export default function Home() {
       <Sponsors />
       <Privacy />
       <Footer />
+      <Congrats />
     </div>
   );
 }

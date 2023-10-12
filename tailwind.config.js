@@ -12,6 +12,7 @@ export default {
       bg1: "rgba(212, 52, 254, 0.12)",
       bg2: "rgba(144, 58, 255, 0.12)",
       bg3: "rgba(255, 255, 255, 0.03)",
+      bg4: "rgba(255, 255, 255, 0.01)",
       gradient: ["#903AFF", " #D434FE", "#FF26B9", "#FE34B9"],
     },
     extend: {
