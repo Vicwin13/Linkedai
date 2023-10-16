@@ -5,10 +5,14 @@ export default function Ideas() {
     <>
       <div className="flex flex-wrap border-white border-opacity-5 border-t-2 border-b-2 py-8 justify-center lg:justify-between items-center">
         <div className="lg:pl-32">
-          <img className="md:w-[30rem] md:h-[29rem]" src={idea} alt="" />
+          <img
+            className="w-[16rem] md:w-[30rem] md:h-[29rem]"
+            src={idea}
+            alt=""
+          />
         </div>
         <div className="lg:pr-32 w-[33rem] ">
-          <p className="font-clash mt-16 mx-auto pb-8 w-[27rem] text-center lg:text-left text-[2rem] font-[700] leading-none">
+          <p className="font-clash mt-16 mx-auto pb-8 text-xl w-[15rem] md:w-[27rem] text-center lg:text-left md:text-[2rem] font-[700] leading-none">
             Introduction to getlinked
             <span className="text-third"> tech Hackathon 1.0</span>
           </p>

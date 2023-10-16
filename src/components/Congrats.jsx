@@ -32,7 +32,7 @@ export default function Congrats() {
           Back
         </button>
 
-        <img src={star} alt="" srcset="" />
+        <img src={star} alt="" />
         <img src={starb} alt="" />
       </section>
       <img src={star1} alt="" />

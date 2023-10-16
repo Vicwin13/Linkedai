@@ -6,7 +6,7 @@ export default function Navbar() {
     <div>
       <NavbarLayout>
         <div className="absolute font-[400] text-[1rem] font-montserrat flex items-center pt-3 inset-y-0 right-8 lg:right-32">
-          <div>
+          <div className="hidden md:block">
             <a className="pl-12" href="">
               Timeline
             </a>
@@ -20,14 +20,14 @@ export default function Navbar() {
               Contact
             </Link>
           </div>
-          <div className=" pl-8 lg:pl-20  flex items-center gap-2 ">
+          <div className=" pl-4 lg:pl-20  flex items-center gap-2 ">
             <button className="md:block font-montserrat  font-[400] text-[1rem] rounded bg-gradient-to-tr from-gradient-2 via-gradient-3, via-gradient-1 to-gradient-0 w-[10.75rem] h-[3.3rem]">
               <Link to="/register">Register</Link>
             </button>
-            <div className=" w-full flex flex-col md:hidden">
-              <span className="bg-white mb-1 w-[2rem] h-1"></span>
-              <span className="bg-white  mb-1 w-[2rem] h-1"></span>
-              <span className="bg-white w-[2rem] h-1"></span>
+            <div className=" w-fit flex flex-col md:hidden">
+              <span className="bg-white rounded mb-1 w-[1rem] h-1"></span>
+              <span className="bg-white rounded  mb-1 w-[2rem] h-1"></span>
+              <span className="bg-white rounded w-[1rem] self-end h-1"></span>
             </div>
           </div>
         </div>
