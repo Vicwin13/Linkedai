@@ -37,7 +37,7 @@ export default function HomeContent() {
               </p>
             </div>
 
-            <p className=" font-montserrat text-[1.3rem] md:text-[1.25rem] md:text-left text-center mx-auto w-[26rem] md:w-full leading-8 ">
+            <p className="  font-montserrat text-[1.3rem] md:text-[1.25rem] md:text-left text-center mx-auto w-[26rem] md:w-full leading-8 ">
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
             </p>
@@ -47,7 +47,8 @@ export default function HomeContent() {
               Register
             </button>
           </div>
-          <div className="flex justify-center  gap-2 mt-12">
+
+          <div className="flex md:justify-start  justify-center  gap-2 mt-12">
             <p>
               <span className=" font-unica text-[400] text-[4rem]">00</span>H
             </p>

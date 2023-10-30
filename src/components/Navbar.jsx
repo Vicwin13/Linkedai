@@ -1,12 +1,39 @@
 import { Link } from "react-router-dom";
 import NavbarLayout from "./NavbarLayout";
-
+import styled from "styled-components";
+import { useState } from "react";
+import Popup from "./Popup";
 export default function Navbar() {
+  const [isPopup, setIsPopup] = useState(false);
+
+  const showPopup = () => {
+    setIsPopup(true);
+  };
+
+  const closePopup = () => {
+    setIsPopup(false);
+  };
+
+  const StyledButton = styled.button`
+    display: none;
+    @media screen and (min-width: 600px) {
+      display: block;
+    }
+  `;
+
+  const NavLinks = styled.div`
+    display: none;
+
+    @media screen and (min-width: 850px) {
+      display: block;
+    }
+  `;
   return (
     <div>
+      <Popup show={isPopup} onClose={closePopup} />
       <NavbarLayout>
         <div className="absolute font-[400] text-[1rem] font-montserrat flex items-center pt-3 inset-y-0 right-8 lg:right-32">
-          <div className="hidden md:block">
+          <NavLinks className=" ">
             <a className="pl-12" href="">
               Timeline
             </a>
@@ -19,12 +46,12 @@ export default function Navbar() {
             <Link to="/contact" className="pl-12">
               Contact
             </Link>
-          </div>
+          </NavLinks>
           <div className=" pl-4 lg:pl-20  flex items-center gap-2 ">
-            <button className="md:block font-montserrat  font-[400] text-[1rem] rounded bg-gradient-to-tr from-gradient-2 via-gradient-3, via-gradient-1 to-gradient-0 w-[10.75rem] h-[3.3rem]">
+            <StyledButton className=" font-montserrat  font-[400] text-[1rem] rounded bg-gradient-to-tr from-gradient-2 via-gradient-3, via-gradient-1 to-gradient-0 w-[10.75rem] h-[3.3rem]">
               <Link to="/register">Register</Link>
-            </button>
-            <div className=" w-fit flex flex-col md:hidden">
+            </StyledButton>
+            <div className=" w-fit flex flex-col md:hidden" onClick={showPopup}>
               <span className="bg-white rounded mb-1 w-[1rem] h-1"></span>
               <span className="bg-white rounded  mb-1 w-[2rem] h-1"></span>
               <span className="bg-white rounded w-[1rem] self-end h-1"></span>
