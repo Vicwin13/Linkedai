@@ -7,30 +7,11 @@ export default function Navbar() {
   const [isPopup, setIsPopup] = useState(false);
 
   const showPopup = () => {
-    setIsPopup(true);
+    setIsPopup(!isPopup);
   };
 
-  const closePopup = () => {
-    setIsPopup(false);
-  };
-
-  const StyledButton = styled.button`
-    display: none;
-    @media screen and (min-width: 600px) {
-      display: block;
-    }
-  `;
-
-  const NavLinks = styled.div`
-    display: none;
-
-    @media screen and (min-width: 850px) {
-      display: block;
-    }
-  `;
   return (
     <div>
-      <Popup show={isPopup} onClose={closePopup} />
       <NavbarLayout>
         <div className="absolute font-[400] text-[1rem] font-montserrat flex items-center pt-3 inset-y-0 right-8 lg:right-32">
           <NavLinks className=" ">
@@ -52,6 +33,7 @@ export default function Navbar() {
               <Link to="/register">Register</Link>
             </StyledButton>
             <div className=" w-fit flex flex-col md:hidden" onClick={showPopup}>
+              {isPopup && <Popup onClose={showPopup} />}
               <span className="bg-white rounded mb-1 w-[1rem] h-1"></span>
               <span className="bg-white rounded  mb-1 w-[2rem] h-1"></span>
               <span className="bg-white rounded w-[1rem] self-end h-1"></span>
@@ -62,3 +44,18 @@ export default function Navbar() {
     </div>
   );
 }
+
+const StyledButton = styled.button`
+  display: none;
+  @media screen and (min-width: 600px) {
+    display: block;
+  }
+`;
+
+const NavLinks = styled.div`
+  display: none;
+
+  @media screen and (min-width: 850px) {
+    display: block;
+  }
+`;

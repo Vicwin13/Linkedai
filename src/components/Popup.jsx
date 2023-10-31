@@ -1,23 +1,30 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // eslint-disable-next-line react/prop-types
-function Popup({ show, onClose }) {
-  if (!show) {
-    return null;
-  }
+export default function Popup({ onClose }) {
+  const popupRef = useRef();
 
-  const Ring = styled.div`
-    border-image: linear-gradient(to bottom, #903aff, #ff26b9);
-    border-image-slice: 1;
-    border-radius: 50%;
-  `;
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [onClose]);
 
   return (
-    <div className="absolute">
-      <aside className="bg-first rounded-lg  p-16 w-[21.75rem] h-[30rem] border ">
+    <div className="fixed  top-0 z-1000 right-0 z-10">
+      <aside className="bg-first rounded-lg  p-16 w-[21rem] h-[30rem] border ">
         <div className="pb-12 flex justify-end" onClick={onClose}>
-          <Ring className="border-4  flex justify-center items-center w-8 h-8 rounded">
+          <Ring className="border-4 flex justify-center items-center w-8 h-8 rounded">
             X
           </Ring>
         </div>
@@ -35,4 +42,8 @@ function Popup({ show, onClose }) {
   );
 }
 
-export default Popup;
+const Ring = styled.div`
+  border-image: linear-gradient(to bottom, #903aff, #ff26b9);
+  border-image-slice: 1;
+  border-radius: 50%;
+`;

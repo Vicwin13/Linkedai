@@ -9,12 +9,16 @@ export default function HomeContent() {
   return (
     <>
       <section className="bg-first  flex xl:flex-row flex-col justify-center  items-center text-white relative">
-        <div className="absolute  top-0 z-10 lg:right-32 right-5">
+        <div className="absolute  top-0 z-1 lg:right-32 right-5">
           <p className="italic font-montserrat text-base md:text-[2.25rem] font-[700] text-italics">
             Igniting a Revolution in HR Innovation
           </p>
           <div className="relative">
-            <img className=" absolute right-0" src={curve} alt="" />
+            <img
+              className=" absolute w-[11rem] md:w-fit h-fit   md:right-0"
+              src={curve}
+              alt=""
+            />
           </div>
         </div>
 
@@ -37,7 +41,7 @@ export default function HomeContent() {
               </p>
             </div>
 
-            <p className="  font-montserrat text-[1.3rem] md:text-[1.25rem] md:text-left text-center mx-auto w-[26rem] md:w-full leading-8 ">
+            <p className="  font-montserrat text-[.9rem] leading-1 md:text-[1.25rem] md:text-left text-center mx-auto w-[20rem] sm:w-[26rem] md:w-full md:leading-8 ">
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
             </p>
